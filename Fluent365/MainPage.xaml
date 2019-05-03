@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Fluent365.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent365"
+    xmlns:controls="using:Fluent365.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ToolkitControls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Page.Resources>
+        <AcrylicBrush x:Name="BackgroundAcrylic" BackgroundSource="HostBackdrop" TintColor="DarkGray" TintOpacity="0.4" FallbackColor="Transparent" TintTransitionDuration="0:0:0.4"/>
+    </Page.Resources>
+    
+   
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource BackgroundAcrylic}">
+        <Grid.Resources>
+            <ThemeShadow x:Name="BackgroundGridShadow"/>
+            <ThemeShadow x:Name="HeroImageShadow"/>
+        </Grid.Resources>
+
+        <Grid x:Name="BackgroundGrid" />
+
+        <ToolkitControls:WrapPanel Margin="48" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <controls:OfficeTile TileColor="#FF0067cf" AppName="OneDrive" IconPath="ms-appx:///Assets/Icons/OneDrive.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF004a94" AppName="Yammer" IconPath="ms-appx:///Assets/Icons/Yammer.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF004b99" AppName="Outlook" IconPath="ms-appx:///Assets/Icons/Outlook.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF00595b" AppName="SharePoint" IconPath="ms-appx:///Assets/Icons/SharePoint.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF962710" AppName="PowerPoint" IconPath="ms-appx:///Assets/Icons/PowerPoint.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF0079c8" AppName="Skype" IconPath="ms-appx:///Assets/Icons/Skype.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF0a326a" AppName="Word" IconPath="ms-appx:///Assets/Icons/Word.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF202a7a" AppName="Teams" IconPath="ms-appx:///Assets/Icons/Teams.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF005a25" AppName="Excel" IconPath="ms-appx:///Assets/Icons/Excel.png" Tapped="OfficeTile_Tapped" />
+            <controls:OfficeTile TileColor="#FF570384" AppName="OneNote" IconPath="ms-appx:///Assets/Icons/OneNote.png" Tapped="OfficeTile_Tapped" />
+        </ToolkitControls:WrapPanel>
+    </Grid>
+</Page>
