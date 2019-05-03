@@ -90,7 +90,6 @@ namespace Fluent365.Controls
             _appIcon.Translation = new Vector3(0, 0, 100);
             _tileGrid.Translation = new Vector3(0, 0, 16);
 
-          
 
             var lightAnimationSet = _appIcon.Light(distance: 1500, duration: 350, delay: 0, color: Colors.White, easingMode: Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut);
             lightAnimationSet.Start();
